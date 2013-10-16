@@ -2,46 +2,219 @@
 <html>
   <head>
     <title>LaunchZap, Documentos y tramites para PYMES y Startup</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-	</a><link href="styles/css/bootstrap.css" rel="stylesheet" media="screen">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-	
-  </head>
+	<link href="styles/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="styles/css/bootstrap2.css" media="screen" rel="stylesheet" type="text/css" />
+    
   <body>
-<!--permite loguear desde facebook (SDK) la documentaciòn se encuentra en https://developers.facebook.com/docs/facebook-login/login-flow-for-web/#checklogin -->
-<!-- el appId es '234999379984368' y channelUrl '//www.launchzap.com/channel.html' -->
+	<!--permite loguear desde facebook (SDK) la documentaciÃ²n se encuentra en https://developers.facebook.com/docs/facebook-login/login-flow-for-web/#checklogin -->
+	<!-- el appId es '234999379984368' y channelUrl '//www.launchzap.com/channel.html' -->
+	<!--permite loguear desde google+ (SDK) y la documentacion se encuentra en https://developers.google.com/+/web/signin/#try_it -->
+	<!--permite loguear desde LinkedIn (SDK) la documentacion se encuentra en http://developer.linkedin.com/documents/sign-linkedin -->
 
-<!--permite loguear desde google+ (SDK) y la documentacion se encuentra en https://developers.google.com/+/web/signin/#try_it -->
-<!--permite loguear desde LinkedIn (SDK) la documentacion se encuentra en http://developer.linkedin.com/documents/sign-linkedin -->
-
-
-
-    <div class="row row-offcanvas row-offcanvas-right"><!--barra lateral para manejo de documentos &c -->
-		 
-		<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation"><!--se suppone que debe llegar hasta el borde de abajo... sabes como hacerlo? -->
-			 <img class="img-responsive" src="imgs/fd_a_1380140783.jpg" alt="140x280" style="width: 280px; height: 140px;">
-			 <div class="text"></div>
-			<!-- el boton de inicio de sesion desde facebook -->
-			<!-- el boton de inicio de sesion desde google+ -->
-			<!-- el boton de inicio de sesion desde LinkedIn -->
-        </div>
-		
-		
-		<div class="col-xs-12 col-sm-9" id="board" role="body"><!--en este lugar se desarrolla la landing -->
-			 				  					  					<!-- igual, hasta el borde de abajo -->
-        </div>
+<div id="site-header">
+	<div class="navigation-wrapper">
+		<hgroup id="logo">
+			<a href="/" style="width: 42px; height: 42px">
+				<h1>
+					<span class="hide">
+						LaunchZap, documentos y tramites legales por internet.
+					</span>
+				</h1>
+			</a>
+		</hgroup>
+		<nav id="navigation">
+			<span class="site-nav">
+				<a href="file:///C:/Users/gramil/Documents/GitHub/LaunchZap/features">
+					Caracteristicas</a>
+				<a href="file:///C:/Users/gramil/Documents/GitHub/LaunchZap/pricing">
+					precios</a>
+				<a href="file:///C:/Users/gramil/Documents/GitHub/LaunchZap/support">
+					soporte</a>
+				<a href="file:///C:/Users/gramil/Documents/GitHub/LaunchZap/blog">
+					blog</a>
+				<a href="file:///C:/Users/gramil/Documents/GitHub/LaunchZap/more/#section-more">
+					mas</a>
+			</span>
+			<span class="right-nav">
+				<span class="account-actions">
+					<a href="file:///C:/Users/gramil/Documents/GitHub/LaunchZap/signup">
+						<span class="nav-message">
+						</span>
+						Registrate! 
+					</a>
+					<a href="http://www.launchzap.com/login">
+						Iniciar sesion</a>			
+				</span>
+			</span>
+		</nav>
 	</div>
+<!-- se trata de un cuadro de busqueda basado en google -->
+	<div id="nav-search">
+		<div class="search-input-container">
+			<div class="col span1of1 pt6">
+				<form action="/search" class="search-form" id="search-header-form" role="search">
+					<input autocapitalize="off" autocomplete="off" autocorrect="off" class="search-input" id="search-input" name="q" placeholder="Search MailChimp" tabindex="1" type="search">
+					<input name="cof" type="hidden" value="FORID:9">
+					<input name="cx" type="hidden" value="002762535254237243785:4onskqo03ra">
+					<button class="icon-search search-submit show" id="trigger-submit">
+						<span class="hide">
+							Search
+						</span>
+					</button>
+					<button class="search-clear icon-close hide" id="trigger-clear">
+						<span class="hide">
+							Clear
+						</span>
+					</button>
+					<div class="load-indicator">
+						<div class="circle-1">
+						</div>
+						<div class="circle-2">
+						</div>
+						<span class="hide">
+							Loading	
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="autocomplete-container">
+			<div class="gsc-control-cse gsc-control-cse-es">
+				<div class="gsc-control-wrapper-cse" dir="ltr" style="visibility: hidden;">
+					<form class="gsc-search-box" accept-charset="utf-8" style="display: none;">
+						<table cellspacing="0" cellpadding="0" class="gsc-search-box">
+							<tbody>
+								<tr>
+									<td class="gsc-input"><input autocomplete="off" type="text" size="10" class=" gsc-input" name="search" title="buscar" id="gsc-i-id1" dir="ltr" spellcheck="false" style="outline: none; background-image: url(http://www.google.com/cse/intl/es/images/google_custom_search_watermark.gif); background-color: rgb(255, 255, 255); background-position: 0% 50%; background-repeat: no-repeat no-repeat;">
+									</td>
+									<td class="gsc-search-button"><input type="button" value="Buscar" class="gsc-search-button" title="buscar">
+									</td>
+									<td class="gsc-clear-button">
+										<div class="gsc-clear-button" title="borrar resultados">
+											&nbsp;
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table cellspacing="0" cellpadding="0" class="gsc-branding">
+							<tbody>
+								<tr>
+									<td class="gsc-branding-user-defined"></td><td class="gsc-branding-text">
+										<div class="gsc-branding-text">
+											con la tecnología de
+										</div>
+									</td>
+									<td class="gsc-branding-img">
+										<img src="https://www.google.com/uds/css/small-logo.png" class="gsc-branding-img">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+					<div class="gsc-results-wrapper-nooverlay">
+						<div class="gsc-tabsAreaInvisible">
+							<div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">
+								Búsqueda personalizada de Google
+							</div>
+							<span class="gs-spacer">
+							</span>
+						</div>
+						<div class="gsc-refinementsAreaInvisible">
+						</div>
+						<div class="gsc-above-wrapper-area-invisible">
+							<table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container">
+								<tbody>
+									<tr>
+										<td class="gsc-result-info-container"><div class="gsc-result-info-invisible">
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="gsc-adBlockInvisible">
+					</div>
+					<div class="gsc-wrapper">
+						<div class="gsc-adBlockInvisible">
+						</div>
+						<div class="gsc-resultsbox-invisible">
+							<div class="gsc-resultsRoot gsc-tabData gsc-tabdActive">
+								<table cellspacing="0" cellpadding="0" class="gsc-resultsHeader">
+									<tbody>
+										<tr>
+											<td class="gsc-twiddleRegionCell">
+												<div class="gsc-twiddle">
+													<div class="gsc-title">
+														web
+													</div>
+												</div>
+												<div class="gsc-stats">
+												</div>
+												<div class="gsc-results-selector gsc-all-results-active">
+													<div class="gsc-result-selector gsc-one-result" title="mostrar un resultado">
+														&nbsp;
+													</div>
+													<div class="gsc-result-selector gsc-more-results" title="mostrar más resultados">
+														&nbsp;
+													</div>
+													<div class="gsc-result-selector gsc-all-results" title="mostrar todos los resultados">
+														&nbsp;
+													</div>
+												</div>
+											</td>
+											<td class="gsc-configLabelCell">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div>
+							<div class="gsc-expansionArea">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="styles/js/bootstrap.js"></script>
-  </body>
-</html>
+</div><div class="search-result-template">
+<article class="search-result" id="web_webResult">
+<div class="content row"><div class="col span1of1">
+<a data-attr="{href:unescapedUrl,target:target}">
+<h2 class="result-title">
+<span data-body="html(searchFormatters.label(perResultLabels))">
+</span>
+<span data-body="richSnippet.metatags.ogTitle" data-if="Vars.richSnippet &amp;&amp; richSnippet.metatags.ogTitle">
+</span>
+<span data-body="titleNoFormatting" data-if="typeof Vars.richSnippet == 'undefined' || (typeof Vars.richSnippet != 'undefined' &amp;&amp; typeof Vars.richSnippet.metatags.ogTitle == 'undefined')"></span>
+</h2>
+<em class="body result-url" data-attr="{href:unescapedUrl,target:target}" data-body="searchFormatters.long_url(unescapedUrl, visibleUrl)">
+</em>
+<p class="body result-body" data-body="html(content)">
+</p>
+</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+************** fin del cuadro de busqueda-->
 
+   
+   
+   	<div class="text-center" style="margin:10%">
+				 <p>Somos LaunchZap, la plataforma que te permite mantener todos tus tramites, en orden.</p>
+				 <p>Registrate para empezar!</p>
+				 <div><!-- boton de registro directo --></div>
+				 <div class="btn-group open">
+			 		<!-- el boton de inicio de sesion desde facebook -->
+					<!-- el boton de inicio de sesion desde google+ -->
+					<!-- el boton de inicio de sesion desde LinkedIn -->
+			 	</div>			 
+			</div>
+        </div><!--container -->
+		
+		
